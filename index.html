@@ -4,24 +4,200 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon-16x16.png">
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/61cc26f0c82c976b71c3ee0a/1fo2ng6t0';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-</script>
-<!--End of Tawk.to Script-->
+  <title>YINGN-main</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .siteContent {
+      width: 1080px;
+      margin: auto;
+      clear: both;
+    }
+
+    #topMenubar {
+      width: 100%;
+      height: 60px;
+      background-color: darkblue;
+    }
+
+    #topMenubar ul {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #topMenubar ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 19px 0px;
+    }
+
+    #topMenubar ul li:hover {
+      background-color: blue;
+    }
+
+    #topMenubar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 19px 30px;
+
+    }
+    
+    #topMenubar ul li a:hover {
+      color: white;
+    }
+
+    #contentArea {
+      padding-top: 10px;
+    }
+
+    section {
+      width: 75%;
+      float: left;
+    }
+
+    aside {
+      width: 25%;
+      float: left;
+    }
+
+    #loginArea {
+      height: 120px;
+    }
+
+    #loginArea label {
+      float: right;
+      padding-right: 10px;
+    }
+
+    #loginArea span {
+      font-size: small;
+    }
+
+    #password {
+      padding-bottom: 20px;
+    }
+
+    #loginArea div {
+      text-align: center;
+      padding: 5px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: aliceblue;
+    }
+
+    #openTime {
+      padding-top: 10px;
+    }
+
+    #openTime table {
+      border: 1px solid black;
+      border-collapse: collapse; 
+      width: 100%;
+    }
+
+    #openTime td {
+      font-size: small;
+      padding: 2px;
+      padding-left: 10px;
+    }
+
+    #openTime thead {
+      color: white;
+      background-color: darkblue;
+    }
+
+
+    footer {
+      width: 100%; height: 10%; clear: both; background-color: pink;
+    }
+    
+  </style>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/61cc26f0c82c976b71c3ee0a/1fo2ng6t0';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
 </head>
+
 <body>
+  <header>
+    <h1 class="siteContent"><a href="index.html"><img src="./media/logo.png" alt="" width="100px"></a></h1>
+  </header>
+
+  <nav id="topMenubar">
+    <ul>
+      <b>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">게시판</a></li>
+        <li><a href="#">정보</a></li>
+        <li><a href="#">의뢰</a></li>
+        <li><a href="#">저장소</a></li>
+        <li><a href="#">이용안내</a></li>
+        <li><a href="#">고객센터</a></li>
+      </b>
+    </ul>
+  </nav>
+
+  <div id="contentArea" class="siteContent">
+    <section>
+      <img src="./media/main.png" alt="" width="800px">
+    </section>
+
+    <aside id="loginArea">
+      <form action="">
+        <div>
+          <label for="ID">
+            <span>아이디: </span><input type="text" placeholder="ID">
+          </label>
+          <br>
+          <label id="password" for="PASSWORD">
+            <span>비밀번호: </span><input type="text" placeholder="PASSWORD">
+          </label>
+          <br>
+          <input type="button" value="로그인">
+          <input type="button" value="회원가입">
+        </div>
+      </form>
+    </aside>
+
+    <aside id="openTime">
+      <table>
+        <thead>
+          <td>운영자 접속시간</td>
+        </thead>
+        <tr>
+          <td>평일: 항시대기</td>
+        </tr>
+        <tr>
+          <td>주말: 항시대기</td>
+        </tr>
+      </table>
+    </aside>
+
+    <footer>
+      a
+    </footer>
+  </div>
+
+
   
+  
+
 </body>
 </html>
